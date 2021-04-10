@@ -1,0 +1,124 @@
+.coin-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+.coin-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: auto;
+    padding-bottom: 2rem;
+    border-bottom: 1px #d9d9d973 solid;
+    max-width: 900px;
+}
+.box1,
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coin {
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    min-width: 300px;
+}
+.coin h1 {
+    font-size: 1.6rem;
+    width: 150px;
+}
+.coin img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+.coin-symbol {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+.coin-data {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.25rem;
+}
+.coin-price {
+    width: 11rem;
+}
+.coin-volume {
+    width: 20rem;
+}
+.coin-marketcap {
+    width: 24rem;
+}
+.coin-percent {
+    width: 8rem;
+}
+.red {
+    color: #f00606;
+}
+.green {
+    color: #11d811;
+}
+
+@media only screen and (max-width: 930px) {
+    .coin-row {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 1rem;
+    }
+    .coin {
+        padding-bottom: 1rem;
+        justify-content: flex-start;
+    }
+    .box1,
+    .box2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .box1 p,
+    .box2 p {
+        padding: 0.5rem;
+    }
+    .coin-price {
+        width: 5rem;
+    }
+    .coin-volume {
+        width: 5rem;
+    }
+    .coin-marketcap {
+        width: 5rem;
+    }
+    .coin-percent {
+        width: 5rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .coin-row {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 1rem;
+        max-width: 250px;
+    }
+    .coin-data {
+        margin-left: -40px;
+    }
+    .box2 {
+        margin-left: 20px;
+    }
+    .box1 p,
+    .box2 p {
+        padding: 0.5rem;
+        margin: 0;
+    }
+}
